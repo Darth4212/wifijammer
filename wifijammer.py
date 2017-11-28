@@ -2,19 +2,19 @@
 # -*- coding: UTF-8 -*-
 
 import logging
-logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # Shut up Scapy
+    logging.getLogger("scapy.runtime").setLevel(logging.ERROR) # Shut up Scapy
 from scapy.all import *
 conf.verb = 0 # Scapy I thought I told you to shut up
 import os
-import sys
-import time
+    import sys
+        import time
 from threading import Thread, Lock
-from subprocess import Popen, PIPE
-from signal import SIGINT, signal
+    from subprocess import Popen, PIPE
+        from signal import SIGINT, signal
 import argparse
-import socket
-import struct
-import fcntl
+    import socket
+        import struct
+            import fcntl
 
 # Console colors
 W  = '\033[0m'  # white (normal)
